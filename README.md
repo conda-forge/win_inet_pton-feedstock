@@ -1,3 +1,7 @@
+<!--
+# -*- mode: jinja -*-
+-->
+
 About win_inet_pton
 ===================
 
@@ -14,7 +18,7 @@ Summary: Native inet_pton and inet_ntop implementation for Python on Windows (wi
 Current build status
 ====================
 
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/win_inet_pton-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/win-inet-pton-feedstock/branch/master)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/win-inet-pton-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/win-inet-pton-feedstock/branch/master)
 ![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
 ![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
 
@@ -49,6 +53,8 @@ conda search win_inet_pton --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -104,3 +110,10 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@ocefpaf](https://github.com/ocefpaf/)
+* [@pmlandwehr](https://github.com/pmlandwehr/)
+
