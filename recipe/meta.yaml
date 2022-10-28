@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - __win  # [win]
+    - __win
 
 test:
   imports:
