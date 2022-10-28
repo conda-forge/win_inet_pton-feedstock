@@ -9,16 +9,17 @@ source:
   sha256: dd03d942c0d3e2b1cf8bab511844546dfa5f74cb61b241699fa379ad707dea4f
 
 build:
-  number: 5
-  skip: True  # [not win]
+  number: 6
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
+    - __win  # [win]
 
 test:
   imports:
