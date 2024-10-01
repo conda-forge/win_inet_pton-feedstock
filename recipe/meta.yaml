@@ -9,7 +9,7 @@ source:
   sha256: dd03d942c0d3e2b1cf8bab511844546dfa5f74cb61b241699fa379ad707dea4f
 
 build:
-  number: 6
+  number: 7
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,7 +27,7 @@ test:
 
 about:
   home: https://github.com/hickeroar/win_inet_pton
-  license: PUBLIC-DOMAIN
+  license: LicenseRef-Public-Domain
   license_file: LICENSE
   summary: 'Native inet_pton and inet_ntop implementation for Python on Windows (with ctypes).'
   dev_url: https://github.com/hickeroar/win_inet_pton
