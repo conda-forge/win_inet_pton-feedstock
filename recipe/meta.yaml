@@ -5,24 +5,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/w/win_inet_pton/win_inet_pton-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/w/win_inet_pton/win_inet_pton-{{ version }}.tar.gz
   sha256: dd03d942c0d3e2b1cf8bab511844546dfa5f74cb61b241699fa379ad707dea4f
 
 build:
-  number: 7
+  number: 8
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - __win
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - win_inet_pton
 
